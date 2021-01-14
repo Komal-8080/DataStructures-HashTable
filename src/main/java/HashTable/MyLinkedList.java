@@ -5,6 +5,7 @@ public class MyLinkedList<K> {
 	public INode<K> head;
 	public INode<K> tail;
 
+	//Constructor
 	public MyLinkedList() {
 		this.head = null;
 		this.tail = null;

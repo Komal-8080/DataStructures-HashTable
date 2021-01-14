@@ -5,35 +5,42 @@ public class MyMapNode<K, V> implements INode<K> {
 	V value;
 	MyMapNode<K, V> next;
 
+	//Constructor
 	public MyMapNode(K key, V value) {
 		this.key = key;
 		this.value = value;
 		next = null;
 	}
 
+	//To get key
 	@Override
 	public K getKey() {
 		return key;
 	}
 
+	//To set key
 	@Override
 	public void setKey(K key) {
 		this.key = key;
 	}
 
+	//To get next
 	@Override
 	public INode<K> getNext() {
 		return next;
 	}
 	
+	//To get value
 	public V getValue() {
 		return this.value;
 	}
 
+	//To set Value
 	public void setValue(V value) {
 		this.value = value;
 	}
 
+	//To set next
 	@Override
 	public void setNext(INode<K> next) {
 		this.next = (MyMapNode<K, V>) next;
@@ -47,5 +54,4 @@ public class MyMapNode<K, V> implements INode<K> {
 			myMapNodeString.append("->").append(next);
 		return myMapNodeString.toString();
 	}
-
 }
