@@ -3,7 +3,6 @@ package HashTable;
 import org.junit.Assert;
 import org.junit.Test;
 
-
 public class MyHashMapTest {
 
 	//Method to find the frequency of words in a given sentence
